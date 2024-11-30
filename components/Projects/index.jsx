@@ -5,7 +5,7 @@ import project2 from "@/public/project2.png";
 
 const Projects = () => {
   return (
-    <div className="w-full lg:px-24 px-10 min-h-screen py-16">
+    <div className="max-w-screen-xl mx-auto w-full lg:px-24 px-10 min-h-screen py-16">
       <div className="pb-28 pt-10">
         <SectionTitle backgroundText="featured">featured projects</SectionTitle>
       </div>

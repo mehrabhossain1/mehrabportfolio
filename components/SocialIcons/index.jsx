@@ -1,38 +1,46 @@
-import { GitHubLogoIcon, LinkedInLogoIcon} from '@radix-ui/react-icons'
-import React from 'react'
-import {AtSymbolIcon} from "@heroicons/react/24/outline"
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import React from "react";
+import { AtSymbolIcon } from "@heroicons/react/24/outline";
 import { SiLeetcode } from "react-icons/si";
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
-const icons = [{
+const icons = [
+  {
     Icon: GitHubLogoIcon,
-    link: "https://github.com/rijvi"
-}, {
+    link: "https://github.com/mehrabhossain1",
+  },
+  {
     Icon: LinkedInLogoIcon,
-    link: "https://www.linkedin.com/in/rijvi/"
-}, {
+    link: "https://www.linkedin.com/in/mehrabhossain1/",
+  },
+  {
     Icon: SiLeetcode,
-    link: "https://leetcode.com/rijvi/"
-}, {
+    link: "https://leetcode.com/rijvi/",
+  },
+  {
     Icon: AtSymbolIcon,
-    link: "mailto:VHkzT@example.com"
-}]
+    link: "mailto:mehrab.munna00@gmail.com",
+  },
+];
 
 const SocialIcons = () => {
   return (
-    <div className='flex gap-5 ml-1'>
-       {icons.map((icon, index) => (
-           <Link href={icon.link} target="_blank" key={index}>
-               <icon.Icon className={cn(
-                 
-                 'size-6 hover:scale-110 transition',
-                 icon.link.match(/^mailto?:\/\//) ? 'hover:stroke-green-500' : 'hover:text-green-500'
-               )} />
-           </Link>
-       ))}
+    <div className="flex gap-5 ml-1">
+      {icons.map((icon, index) => (
+        <Link href={icon.link} target="_blank" key={index}>
+          <icon.Icon
+            className={cn(
+              "size-6 hover:scale-110 transition",
+              icon.link.match(/^mailto?:\/\//)
+                ? "hover:stroke-green-500"
+                : "hover:text-green-500"
+            )}
+          />
+        </Link>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default SocialIcons
+export default SocialIcons;

@@ -24,9 +24,9 @@ const Navbar = () => {
                 <li key={href} className="group">
                   <Link
                     href={href}
-                    className={`transition-all hover:text-zinc-800 dark:hover:text-zinc-200 ${
+                    className={`transition-all hover:text-green-500 ${
                       pathname === href
-                        ? "text-zinc-800 underline underline-offset-4 dark:text-zinc-100 font-semibold"
+                        ? "text-green-500 underline underline-offset-4 font-semibold"
                         : ""
                     }`}
                   >
