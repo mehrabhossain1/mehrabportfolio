@@ -1,6 +1,7 @@
 import SectionTitle from "../ui/sectionTitle";
 import ProjectsCard from "./ProjectsCard";
 import project1 from "@/public/project1.png";
+import project2 from "@/public/project2.png";
 
 const Projects = () => {
   return (
@@ -29,12 +30,12 @@ const data = [
   },
   {
     id: 2,
-    title: "Eat Cake 2",
+    title: "Syndicate IT",
     description:
       "Different categories handmade cake is available for sale. Registered users will get dashboard access where manage their orders and give review",
-    image: project1,
+    image: project2,
     category: "React",
-    liveLink: "https://eat-cake-2.vercel.app",
+    liveLink: "https://syndicateit.vercel.app",
   },
 ];
 
